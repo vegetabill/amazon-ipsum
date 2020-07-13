@@ -10,22 +10,26 @@ export default function CopyToClipboard({ contents }) {
     });
   };
 
-  return (
-    <>
-      <button disabled={!contents} onClick={copyToClipboard}>
-        <img src={copyIcon} alt="copy icon" /> Copy to clipboard
-      </button>
-      <span>
-        {successful && (
-          <span className="successMessage">
-            <span role="img" aria-label="checkmark">
-              {" "}
-              ✅
+  if (navigator && navigator.clipboard) {
+    return (
+      <>
+        <button disabled={!contents} onClick={copyToClipboard}>
+          <img src={copyIcon} alt="copy icon" /> Copy to clipboard
+        </button>
+        <span>
+          {successful && (
+            <span className="successMessage">
+              <span role="img" aria-label="checkmark">
+                {" "}
+                ✅
+              </span>
+              Copied!
             </span>
-            Copied!
-          </span>
-        )}
-      </span>
-    </>
-  );
+          )}
+        </span>
+      </>
+    );
+  } else {
+    return null;
+  }
 }
