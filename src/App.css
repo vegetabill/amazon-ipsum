@@ -1,0 +1,57 @@
+.app {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 2rem;
+  padding: 1rem;
+}
+
+form {
+  margin: 1rem;
+  align-items: baseline;
+  background-color: rgba(127, 127, 127, 0.5);
+  padding: 1rem 2rem;
+}
+
+label {
+  font-variant-caps: titling-caps;
+}
+
+input[type="range"] {
+  padding: 0.25rem;
+}
+
+input[type="submit"],
+button {
+  /* I definitely wrote all this css from scratch ;-P */
+  background-color: rgb(240, 193, 75);
+  color: rgb(17, 17, 17);
+  text-transform: initial;
+  padding: 0.25rem 0.5rem;
+  background-image: linear-gradient(rgb(247, 223, 165), rgb(240, 193, 75));
+  font-size: 13px;
+  text-align: center;
+  border-bottom-color: rgb(132, 106, 41);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.833333px;
+  border-left-color: rgb(156, 126, 49);
+  border-left-style: solid;
+  border-left-width: 0.833333px;
+  border-right-color: rgb(156, 126, 49);
+  border-right-style: solid;
+  border-right-width: 0.833333px;
+  border-top-color: rgb(168, 135, 52);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+fieldset {
+  border: 0;
+  padding: 1rem;
+}
+
+.output {
+  margin: 1rem;
+  padding: 1rem;
+  line-height: 1.3;
+}

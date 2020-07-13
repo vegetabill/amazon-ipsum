@@ -1,0 +1,56 @@
+@import-normalize;
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url(./assets/amazon-ember.woff2);
+}
+
+body {
+  font-family: "Amazon Ember", san-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: rgb(204, 204, 204);
+}
+
+main {
+  flex: 1;
+  flex-grow: 80;
+  background: url(./assets//box-man.jpg);
+  background-size: cover;
+}
+
+footer {
+  flex: 1;
+  flex-direction: column;
+  background-color: rgb(35, 47, 62);
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+footer section {
+  padding: 0.5rem;
+  align-content: stretch;
+  flex: 1;
+}
+
+footer a,
+.secondary-color {
+  color: rgb(247, 155, 0);
+}
