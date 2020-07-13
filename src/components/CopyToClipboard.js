@@ -6,6 +6,7 @@ export default function CopyToClipboard({ contents }) {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contents).then(() => {
       setSuccessful(true);
+      setTimeout(() => setSuccessful(false), 3000);
     });
   };
 
@@ -16,7 +17,7 @@ export default function CopyToClipboard({ contents }) {
       </button>
       <span>
         {successful && (
-          <span>
+          <span className="successMessage">
             <span role="img" aria-label="checkmark">
               {" "}
               ✅

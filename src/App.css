@@ -45,6 +45,11 @@ button {
   border-top-right-radius: 3px;
 }
 
+input[type="submit"][disabled],
+button[disabled] {
+  background-color: grey;
+}
+
 fieldset {
   border: 0;
   padding: 1rem;
@@ -58,4 +63,35 @@ fieldset {
 
 button img {
   height: 1em;
+}
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  .app {
+    margin: 0;
+    padding: 0.5rem;
+    height: 80%;
+    background: white;
+  }
+  main {
+    background: white;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 100%;
+    padding: 0.6em;
+  }
+
+  .successMessage {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .photoAttribution {
+    display: none;
+  }
 }
