@@ -15,16 +15,17 @@ export default function Form({ updateText }) {
       <h3>Paragraph Generator</h3>
 
       <fieldset>
-        <label for="sentenceRange">Number of Sentences</label>
+        <label htmlFor="sentenceRange">
+          Number of Sentences ({sentenceLength})
+        </label>
         <input
           id="sentenceRange"
           type="range"
           min={1}
-          max={20}
+          max={15}
           value={sentenceLength}
-          onChange={(e) => setSentenceLength(e.target.value)}
+          onChange={(e) => setSentenceLength(parseInt(e.target.value))}
         />
-        ({sentenceLength})
       </fieldset>
       <input type="submit" value="Generate" />
     </form>
